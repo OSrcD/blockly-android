@@ -64,6 +64,12 @@ public class DevTestsActivity extends BlocklySectionsActivity
     }
 
     @NonNull
+    @Override
+    protected CodeGenerationRequest.CodeGeneratorCallback getCreateCodeGenerationCallback() {
+        return null;
+    }
+
+    @NonNull
     protected String getGeneratorJsFilename() {
         return "sample_sections/generators.js";
     }
